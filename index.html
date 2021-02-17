@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Miha GLTF4</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <link type="text/css" rel="stylesheet" href="main.css">                                                                                        
+    </head>
+ 
+    <!-- rabim Sidebar with Accordion
+        https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_examples_mail
+        https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_full
+        https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_breakpoints
+ -->
+    
+    <body>
+        <div class="first-row">
+            <h1>Panthera configurator</h1>
+
+            <button id="exteriorSection" class="accordion">Exterior</button>
+            <div class="panel">
+              <div class="row">
+                <div class="column">
+                  <img id="zelenaPanthera" src="slike/zelena.jpg" alt="Snow" style="width:100%">
+                </div>
+                <div class="column">
+                  <img id="vijolicnaPanthera" src="slike/vijolicna.jpg" alt="Snow" style="width:100%">
+                </div>
+                <div class="column">
+                  <img id="modraPanthera" src="slike/modra.jpg" alt="Snow" style="width:100%">
+                </div>
+                <div class="column">
+                  <img id="oranznaPanthera" src="slike/oranzna.jpg" alt="Snow" style="width:100%">
+                </div>
+              </div> 
+            </div>
+
+            <button id= "seatsSection" class="accordion">Seats</button>
+            <div class="panel">
+                <div class="row">
+                    <div class="column">
+                      <img id="slikaModra" src="https://visualidentity.columbia.edu/sites/default/files/styles/cu_crop/public/content/Colors/pms285e.jpg" alt="Snow" style="width:100%">
+                    </div>
+                    <div class="column">
+                      <img id="slikaRdeca" src="https://files.brainfall.com/wp-content/uploads/2015/10/red5-200x200.jpg" alt="Forest" style="width:100%">
+                    </div>
+                  </div>                  
+            </div>
+
+            <button id="testIzbireSedezev" class="accordion">Section 3</button>
+            <div class="panel">
+                <p>Prostor za opcije.</p>
+            </div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+            </div>
+        </div>
+        <div class="second-row">
+            <script src="js/tween.umd.js"></script>
+            <script src="logic.js" type="module"></script>
+        </div>
+     </body>
+ </html>

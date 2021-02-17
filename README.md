@@ -1,1 +1,1 @@
-# PantheraConfigurator3
+# PantheraConfigurator2
